@@ -8,6 +8,13 @@
     
     Abstraction Class
     - Cannot Be Instantiated [ Cannot Create Object From]
+    - Made For Other Classes To Inherit Prop & Methods From
+    - Can Have Methods & Properties
+    - Can Have Abstracted Method and Non Abstracted Methods
+    - Abstract Methods [ Contains No Body Code ]
+
+    * Rules To Go On
+    * Force Developers To Follow Your Methods
 
     - Variable Inside Class = [ Property ].
     - Variable Outside Class = [ Variable ].

@@ -7,9 +7,12 @@ Abstraction Class
     - Can Have Methods & Properties
     - Can Have Abstracted Method and Non Abstracted Methods
     - Abstract Methods [ Contains No Body Code ]
+
+    * Rules To Go On
+    * Force Developers To Follow Your Methods
 */
 
-abstract class MakeDevice {
+abstract class MakeDevice1 {
 
     public $ram;
     public $test;
@@ -23,7 +26,7 @@ abstract class MakeDevice {
 
 }
 
-class AppleDevice extends MakeDevice {
+class AppleDevice extends MakeDevice1 {
     public function sayBye()
     {
         echo 'Bye';
