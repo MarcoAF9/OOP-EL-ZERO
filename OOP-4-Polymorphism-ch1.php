@@ -38,7 +38,7 @@ class Oracle implements DBConnects{
     }
 }
 
-class Postger implements DBConnects{
+class Postgre implements DBConnects{
     public function getUsers(){
       echo "Test * FROM Oracle_users";
     }
@@ -50,7 +50,7 @@ class Postger implements DBConnects{
     }
 }
 
-$row = new Postger();
+$row = new Postgre();
 $row->getUsers();
 $row->getArticles();
 $row->showStats();
