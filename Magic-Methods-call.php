@@ -27,7 +27,7 @@ class Iphone {
         foreach ($params as $param){
         echo $param."<br>";
         }
-        // if ($method){ *At some point it will make an error
+        // if ($method){ *At some point it will make an error when the method does not have parameters
         //     $this->name = $params[0];
         //     $this->ram = $params[1];
         // }
