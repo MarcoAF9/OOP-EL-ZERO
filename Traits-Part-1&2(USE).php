@@ -40,13 +40,23 @@ trait FaceDetect {
     }
 
 }
+trait AllFeatures {
+    // use FingerPrint;
+    // use ThreeDimensionTouch;
+    // use FaceDetect; --Or
+    use FingerPrint,ThreeDimensionTouch,FaceDetect;
+} 
+
 class Iphone3{
 
-    use FingerPrint;
-    use ThreeDimensionTouch;
-    use FaceDetect;
+    // use FingerPrint;
+    // use ThreeDimensionTouch;
+    // use FaceDetect; --Or
+    // use FingerPrint,ThreeDimensionTouch,FaceDetect; --Or
+    use AllFeatures;
+
     public function sayHello(){ //If U didn't Write Public VC understand is as Public 
-        echo 'Hello Form Iphone';
+        echo 'Hello Form Iphone.//';
         return $this;
     }
 
@@ -70,7 +80,13 @@ class Nokia {
 }
 
 $phone = new Iphone3();
-$phone->FingerFeature()->ThreeD()->FaceFeature()->sayHello();
+$phone->FingerFeature()->ThreeD()->FaceFeature()->sayHello(); //--Or
+
+$phone->FingerFeature();
+$phone->ThreeD();
+$phone->FaceFeature();
+$phone->sayHello();
+
 echo'<pre>'; Print_r($phone); echo'</pre>';
 
 $sony = new Sony();
